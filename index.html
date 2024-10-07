@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Ételgárda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <nav>
-        <div class="title inline c-white">
-            <h1>Ételgárda</h1>
-            <svg width="50" height="50" viewBox="0 0 1001 1001" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M841.346 865.889C975.684 740.372 1035.47 545.197 979.276 357.087C900.236 92.4978 621.669 -57.9189 357.08 21.1214C92.4916 100.162 -57.9251 378.728 21.1153 643.317C63.5161 785.255 163.335 894.336 287.613 952.765C284.786 921.087 282.695 896.91 281.906 887.737C281.792 886.412 281.623 885.107 281.4 883.827C279.256 871.791 270.875 860.324 256.187 853.296C235.215 843.304 216.717 826.482 202.08 804.092C187.443 781.701 177.046 754.322 171.668 724.007C154.592 628.119 154.042 472.311 154.04 468.953C154.044 460.207 156.357 451.379 160.54 444.139C164.724 436.899 170.488 431.749 176.742 429.663C182.997 427.577 189.308 428.7 194.483 432.818C199.657 436.937 203.336 443.766 204.823 452.014L240.637 653.111C242.197 661.757 246.191 668.804 251.774 672.763C257.357 676.723 264.092 677.284 270.556 674.329C277.021 671.374 282.709 665.135 286.418 656.928C290.128 648.721 291.569 639.19 290.437 630.347L254.224 427.005C252.64 418.113 253.742 408.272 257.286 399.647C260.83 391.023 266.527 384.32 273.123 381.015C279.719 377.71 286.674 378.073 292.458 382.023C298.242 385.973 302.381 393.188 303.964 402.08L340.004 604.451C341.679 613.249 345.883 620.327 351.691 624.128C357.499 627.929 364.435 628.143 370.975 624.72C377.514 621.298 383.12 614.522 386.56 605.881C390 597.24 390.992 587.443 389.317 578.645L353.492 377.481C350.352 359.851 357.777 340.429 370.296 332.483L370.162 332.561L370.29 332.472L370.406 332.414C370.635 332.27 370.866 332.13 371.099 331.993C376.877 328.571 383.094 327.994 388.648 330.364C394.202 332.735 398.735 337.9 401.443 344.945C401.462 344.994 401.5 345.093 401.556 345.239C404.373 352.587 453.356 480.376 470.112 574.46C475.528 604.756 475.788 637.215 470.871 669.404C465.953 701.592 455.987 732.677 441.719 760.327C431.736 779.718 428.478 797.017 430.621 809.054C430.845 810.333 431.122 811.584 431.451 812.801C435.947 828.918 454.6 895.932 473.261 965.426C476.336 976.883 479.439 988.496 482.496 1000.02C535.49 1001.9 589.687 995.301 643.311 979.282C646.976 978.187 650.62 977.054 654.241 975.883C650.396 941.569 646.211 901.684 642.256 862.959C636.448 806.161 630.969 750.293 627.528 714.695L617.853 719.543C601.363 727.806 583.976 726.9 569.516 717.024C555.057 707.147 544.709 689.11 540.75 666.881L516.867 532.771C504.99 466.082 513.252 392.276 539.834 327.591C566.417 262.905 609.143 212.639 658.613 187.85L671.048 181.619C677.644 178.314 684.599 178.676 690.383 182.627C696.166 186.577 700.305 193.792 701.889 202.684L773.539 605.011C774.483 610.308 778.523 626.909 785.227 652.691C791.665 677.585 799.987 708.949 808.864 742.37L809.922 746.332C820.383 785.74 831.691 828.363 841.346 865.889ZM370.162 332.561L369.998 332.655L370.097 332.605L370.162 332.561Z" fill="black"/>
-                </svg>
-        </div>         
-        <ul>
-            <li><a href="receptek/1.html">Home</a></li>
-            <li><a href="receptek/2.html">About</a></li>
-            <li><a href="receptek/3.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark montserrat sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white bold" href="#"><img src="etelgarda.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Item #1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Item #2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Item #3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <article class="big left bg-red">
-        <div class="content">
-            <h2>Recept 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
-            <a href="receptek/1.html" class="btn">Elkeszites</a>
+    <section class="hero">
+        <img class="hero-image" src="dummy1.png" alt="Gulyasleves">
+        <div class="hero-text">
+            <h1 class="montserrat text-white">Nagyi konyhája egy <span class="highlight">fakanálnyira</span></h1>
+            <a href="#recipes" class="btn">receptek ></a>
         </div>
-        <img src="dummy1.png" alt="" class="border-red">
-    </article>
-    <article class="big right">
-        <div class="content">
-            <h2>Recept 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
-            <a href="receptek/1.html" class="btn">Elkeszites</a>
+        <div class="black-overlay"></div>
+    </section>
+
+    <!-- Recipe Sections -->
+    <section class="recipes" id="recipes">
+        <div class="recipe-card red-bg">
+            <img src="dummy1.png" alt="Gulyasleves">
+            <div class="recipe-content">
+                <h2>Gulyasleves</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <a href="#" class="btn">Elkészítés</a>
+            </div>
         </div>
-        <img src="dummy1.png" alt="" class="border-red">
-    </article>
-    <script src="./scripts.js"></script>
+        <div class="recipe-card gray-bg">
+            <img src="dummy1.png" alt="Gulyasleves">
+            <div class="recipe-content">
+                <h2>Gulyasleves</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+        </div>
+        <div class="recipe-card green-bg">
+            <img src="dummy1.png" alt="Gulyasleves">
+            <div class="recipe-content">
+                <h2>Gulyasleves</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <a href="#" class="btn">Elkészítés</a>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

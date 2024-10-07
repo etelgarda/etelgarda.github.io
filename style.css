@@ -1,95 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+:root {
+    --red: #823E3E;
+    --gray: #707070;
+    --green: #3F823E;
+    --light-red: #FF7272;
+    --highlight: #FCFF62;
+    --gold: #82733E;
+    --blue: #3E6982;
+}
+
+.montserrat {
+    font-family: 'Montserrat', system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nav {
+    z-index: 0;
+}
+
+.hero {
+    position: relative; /* Make the container a positioning context */
     display: flex;
-    flex-direction: column;
+    background: url(randomhatter.jpg) no-repeat center center/cover;
+    height: 94.5vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    line-height: 82%;
 }
 
-.inline {
-    display: inline;
-}
-
-.c-white {
-    color: #fff;
-}
-
-.c-black {
-    color: #000;
-}
-
-article.big.left {
-    text-align: left;
-    display: inline-block;
-    padding-right: 0;
-}
-
-article.big {
-    width: 80vw;
-    padding: 1em;
-    margin: auto;
-    color: white;
-    height: 20vh;
-    position: relative;
-    border-radius: 10px;
-}
-
-article.big .content {
-    width: 50%;
-    padding: 1em;
-    font-family: "Montserrat", system-ui;
-}
-
-article.big .content h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 2.5em;
-}
-
-article.big .content p {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
-
-article.big.left .content {
-    float: inline-start;
-}
-
-article.big.left img {
-    float: inline-end;
-    right: 0;
-}
-
-article.big img {
-    border: 20px solid #823E3E;
-    border-radius: 50%;
-    height: 150%;
-    width: auto;
-    z-index: 1;
+.hero::before {
+    content: '';
     position: absolute;
-    bottom: -30%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Use the same background */
+    filter: brightness(0.3); /* Apply filter here */
+    z-index: 0; /* Keep it behind other content */
 }
 
-article.big a.btn {
-    background-color: rgba(255, 255, 255, 0.15);
-    font-family: "Lobster Two", sans-serif;
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-style: italic;
+.hero-text, .hero img {
+    position: relative; /* Ensure they are above the background */
+    z-index: 1; /* Keep text and image above the darkened background */
+}
+
+.hero img {
+    display: block;
+    width: auto;
+    max-height: 50vh;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: -10px 10px var(--light-red);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero img:hover {
+    border-radius: 10%;
+    scale: 1.1;
+    box-shadow: none;
+}
+
+.hero-text {
+    font-size: 3rem;
+    text-align: end;
+    width: 25%;
+}
+
+.hero-text h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero-text .highlight {
+    color: var(--highlight);
+    font-family: 'Cookie', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.hero .btn {
+    background-color: var(--light-red);
+    padding: 0.6vh 2vw;
+    font-variant: small-caps;
+    font-weight: bold;
     color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.25rem;
+    transition: all 0.3s ease-in-out;
 }
 
-article.big a.btn:visited {
-    color: rgba(255, 255, 255, 0.55);
+.hero .btn:hover {
+    background-color: var(--red);
+    color: white;
+    scale: 1.1;
 }
 
-.bg-red {
-    background-color: #823E3E;
-}
 
-.border-red {
-    border-color: #823E3E
+@media screen and (max-width: 1137px) {
+    .hero img {
+        display: none;
+    }
+
+    .hero-text {
+        width: 50%;
+        text-align: center;
+    }
 }
