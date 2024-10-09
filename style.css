@@ -110,7 +110,7 @@ body {
 }
 
 .recipe-card {
-    max-height: 40vh;
+    max-height: 30vh;
     display: flex;
     width: 80vw;
     margin: 10vh auto;
@@ -126,7 +126,7 @@ body {
 
 .recipe-card img {
     width: auto;
-    max-height: 25vw;
+    max-height: 20vw;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
@@ -135,7 +135,7 @@ body {
 }
 
 .recipe-card img:hover {
-    border: 0px solid rgba(0, 0, 0, 0);
+    border-width: 0px;
     border-radius: 30%;
     rotate: -10deg;
 }
@@ -153,17 +153,17 @@ body {
 }
 
 .red-bg img {
-    border: 1.5vw solid var(--red);
+    border: 1.2vw solid var(--red);
     float: left;
 }
 
 .gray-bg img {
-    border: 1.5vw solid var(--gray);
+    border: 1.2vw solid var(--gray);
     float: right;
 }
 
 .green-bg img {
-    border: 1.5vw solid var(--green);
+    border: 1.2vw solid var(--green);
     float: left;
 }
 
