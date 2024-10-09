@@ -4,7 +4,7 @@
 
 :root {
     --red: #823E3E;
-    --gray: #707070;
+    --gray: #f1f1f1;
     --green: #3F823E;
     --light-red: #FF7272;
     --highlight: #FCFF62;
@@ -110,15 +110,26 @@ body {
 }
 
 .recipe-card {
-    height: 40vh;
+    max-height: 40vh;
     display: flex;
     width: 80vw;
-    margin: 0 auto;
+    margin: 10vh auto;
     border-radius: 15px;
     color: white;
     font-family: 'Montserrat', system-ui;
     font-optical-sizing: auto;
     font-style: normal;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.recipe-card img {
+    width: auto;
+    max-height: 25vw;
+    object-fit: cover;
+    border-radius: 50%;
+    scale: 1.1;
 }
 
 .red-bg {
@@ -133,10 +144,49 @@ body {
     background-color: var(--green);
 }
 
-.recipe-card img {
-    width: 40vh;
-    object-fit: cover;
-    border-radius: 50%;
+.red-bg img {
+    border: 1.5vw solid var(--red);
+    float: left;
+}
+
+.gray-bg img {
+    border: 1.5vw solid var(--gray);
+    float: right;
+}
+
+.green-bg img {
+    border: 1.5vw solid var(--green);
+    float: left;
+}
+
+.img-right {
+    text-align: right;
+    color: black;
+    justify-content: flex-end;
+}
+
+.img-right a.btn {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.img-right a.btn:hover {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.recipe-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh 3vw;
+}
+
+.recipe-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
 }
 
 .recipe-card .btn {
@@ -163,19 +213,52 @@ body {
     float: inline-end;
 }
 
-.recipe-content {
+footer {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1vh 1vw;
+    margin-top: 5vh;
+}
+
+footer > p {
+    width: 30%;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 728px) {
+    .hero img {
+        display: none
+    }
+
+    footer > p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1137px) {
+    .hero {
+        flex-direction: column;
+    }
+
     .hero img {
-        display: none;
+        max-height: 30vh;
     }
 
     .hero-text {
         width: 50%;
         text-align: center;
+    }
+
+    footer > p {
+        width: 50%;
     }
 }
