@@ -94,9 +94,43 @@ body {
 
 .recipe ol {
     list-style-type: none;
+    counter-reset: item;
 }
 
-.recipe li {
+.ingredients {
+    width: 90%;
+    margin: 1vh auto;
+}
+
+.recipe .ingredients ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.recipe .ingredients {
+    background-color: #82733E;
+    list-style-type: circle;
+    min-height: 7vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2vh 1vw;
+    color: white;
+    font-size: 120%;
+    padding: 2vh 3vw;
+}
+
+.recipe .ingredients h3 {
+    font-weight: 800;
+}
+
+ol {
+    padding: 0 !important;
+}
+
+.recipe .steps li {
     background-color: white;
     min-height: 7vh;
     width: 90%;
@@ -110,7 +144,7 @@ body {
     font-size: 120%;
 }
   
-.recipe li::before {
+.recipe .steps li::before {
     content: counter(item) ".";
     counter-increment: item;
     border-radius: 50%;
@@ -122,6 +156,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: stretch;
     flex-shrink: 0;
 }
 
@@ -156,7 +191,7 @@ footer > p {
         padding: 1vh 5vw;
     }
 
-    .recipe li {
+    .recipe .steps li {
         flex-direction: column;
         padding: 2vh 5vw;
         font-size: 100%;
