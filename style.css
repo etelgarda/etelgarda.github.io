@@ -31,7 +31,7 @@ body {
 }
 
 .hero {
-    position: relative; /* Make the container a positioning context */
+    position: relative;
     display: flex;
     background: url(/img/randomhatter.jpg) no-repeat center center/cover;
     height: 94.5vh;
@@ -49,20 +49,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: inherit; /* Use the same background */
-    filter: brightness(0.3); /* Apply filter here */
-    z-index: 0; /* Keep it behind other content */
+    background: inherit;
+    filter: brightness(0.3);
+    z-index: 0;
 }
 
 .hero-text, .hero img {
-    position: relative; /* Ensure they are above the background */
-    z-index: 1; /* Keep text and image above the darkened background */
+    position: relative;
+    z-index: 1;
 }
 
 .hero img {
     display: block;
-    width: auto;
     max-height: 50vh;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: -10px 10px var(--light-red);
@@ -127,6 +127,7 @@ body {
 .recipe-card img {
     width: auto;
     max-height: 25vw;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
     scale: 1.1;
