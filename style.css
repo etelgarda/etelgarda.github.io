@@ -33,7 +33,7 @@ body {
 .hero {
     position: relative; /* Make the container a positioning context */
     display: flex;
-    background: url(randomhatter.jpg) no-repeat center center/cover;
+    background: url(/img/randomhatter.jpg) no-repeat center center/cover;
     height: 94.5vh;
     align-items: center;
     justify-content: center;
