@@ -130,6 +130,13 @@ body {
     object-fit: cover;
     border-radius: 50%;
     scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+.recipe-card img:hover {
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 30%;
+    rotate: -10deg;
 }
 
 .red-bg {
@@ -236,6 +243,15 @@ footer > p {
 
     footer > p {
         width: 100% !important;
+    }
+
+    .recipe-content {
+        text-align: justify !important;
+        text-align-last: center;
+    }
+
+    .recipe-card img:hover {
+        border-radius: 50px;
     }
 }
 
