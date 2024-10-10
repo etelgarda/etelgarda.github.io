@@ -110,10 +110,10 @@ body {
 }
 
 .recipe-card {
-    min-height: 20dvh;
+    min-height: 16dvh;
     display: flex;
     width: 80vw;
-    margin: 5dvh auto;
+    margin: 10dvh auto;
     border-radius: 15px;
     color: white;
     font-family: 'Montserrat', system-ui;
@@ -130,7 +130,7 @@ body {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
-    scale: 1.1;
+    scale: 1.2;
     transition: all 0.3s ease-in-out;
 }
 
