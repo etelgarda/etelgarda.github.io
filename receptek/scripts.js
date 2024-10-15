@@ -9,8 +9,8 @@ for (let index = 0; index < cards.length; index++) {
         element.style.color = 'white'; // Reset text color if needed
     } else if (index % 3 === 1) {
         // Every 2nd card (white background, white text color)
-        element.style.backgroundColor = '#f1f1f1';
-        element.style.color = 'black'; // White text color
+        element.style.backgroundColor = '#707070';
+        element.style.color = 'white'; // White text color
     } else if (index % 3 === 2) {
         // Every 3rd card (green background, default text color)
         element.style.backgroundColor = '#3F823E';
