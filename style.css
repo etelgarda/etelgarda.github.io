@@ -316,6 +316,7 @@ footer > p {
   .recipe-card img:hover {
     border: 0;
     rotate: 0deg;
+    border-bottom: 1px solid #000;
     border-radius: 15px 15px 0 0 !important;
     filter: brightness(1);
   }
