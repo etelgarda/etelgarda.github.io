@@ -381,7 +381,7 @@ footer > p {
     }
 
     .recipe-card img:hover + .recipe-content h2 {
-        display: none;
+        opacity: 0%;
     }
 
     .recipe-card .btn {
