@@ -301,6 +301,30 @@ footer .links a:hover {
     rotate: 0deg;
     scale: 1;
   }
+  /*modositas*/
+  .imprint-card {
+    padding: 0 !important;
+    text-align: start !important;
+    width: 90%;
+    position: relative;
+    max-height: fit-content;
+  }
+  .imprint-content {
+    text-align: start !important;
+    padding: 2vh 3vw !important;
+    margin: 0;
+    padding: 0 !important;
+    z-index: 1;
+  }
+  .imprint-card h2 {
+    top: 15dvh !important;
+    left: 3dvw !important;
+    transform: none !important;
+    position: absolute;
+    text-align: left;
+    align-self: flex-start !important;
+  }
+  /*modositas vege*/
 }
 @media screen and (max-width: 1137px) {
   .recipe-card img,
@@ -388,4 +412,68 @@ footer .links a:hover {
     margin-right: 3dvh;
     align-self: flex-end;
   }
+  /*modositas*/
+  .imprint-card {
+    padding: 0 !important;
+    text-align: start !important;
+    width: 90%;
+    position: relative;
+    flex-direction: column;
+    margin: 3dvh auto;
+  }
+  .imprint-content {
+    text-align: start !important;
+    padding: 1vh 2vw;
+    margin: 0;
+  }
+  .imprint-content{
+    z-index: 1;
+    padding: 0 !important;
+    display: flex;
+    width: 100%;
+  }
+  .imprint-card h2 {
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: left;
+    align-self: flex-start !important;
+    transition: 0.3s ease-in-out;
+  }
+  /*modositas vege*/
+}
+/*modositasok innentol*/
+.imprint-card {
+  font-family: Montserrat, system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+}
+.imprint-card {
+  min-height: 12dvh;
+  height: fit-content;
+  max-height: 50dvh;
+  width: 80%;
+  margin: 10dvh auto;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2dvh 2vw;
+}
+.imprint-card {
+  background-color: var(--red);
+}
+.imprint-content {
+  flex-direction: column;
+  align-items: center;
+  width: calc(50dvw - 10dvh);
+}
+.imprint-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1dvh;
 }
