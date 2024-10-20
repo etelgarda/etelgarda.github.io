@@ -18,9 +18,9 @@
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
     <meta property="og:locale" content="hu_HU">
-    <title>Ételgárda | Impresszum</title>
+    <title>Ételgárda | Gulyásleves</title>
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/receptek/style.css">
     <link rel="shortcut icon" href="/img/etelgarda.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +32,7 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark montserrat sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand bold" href="#"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24"
-                    class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
+            <a class="navbar-brand text-white bold" href="/index.html"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -56,53 +55,51 @@
     </nav>
     <main>
         <section class="hero">
-            <!-- ide majd egy nem annyira latvanyos kep jojjon, mondjuk egy asztal tele kajaval -->
             <div class="hero-text">
-                <h1 class="montserrat text-white">Impresszum</h1>
+                <h1>Gulyásleves</h1>
+                <h2>Lorem: ipsum</h2>
+                <h2>Dolor: sit</h2>
+                <a href="#recipe" class="btn">lepesek ></a>
             </div>
         </section>
-        <section class="imprint-box">
-            <div class="imprint-card montserrat">
-                <div class="imprint-content">
-                    <h2 class="bold">Vállalkozás adatai:</h2>
-                    <ul>
-                        <li>Cégnév: Ételgárda Kft.</li>
-                        <li>Székhely: 1072 Budapest, Klauzál tér 10</li>
-                        <li>Posta cím: 1072 Budapest, Klauzál tér 10</li>
-                        <li>Adószám: 53849963-7-13</li>
-                        <li>A céget bejegyző hatóság: Pest Megyei Kormányhivatal</li>
-                        <li>Hatósági engedély száma: 957633-5/2024</li>
-                        <li>Cégjegyzékszám: 63-45-733568</li>
-                        <li>Telefonszám: +36 20 856 4253</li>
-                        <li>E-mail: etelgarda@gmail.com</li>
-                    </ul>
+        <!-- Recipe Sections -->
+        <section class="recipe" id="recipe">
+            <ul class="ingredients montserrat">
+                <div class="items">
+                    <li>50 dkg marhahús</li>
+                    <li>2 fej vöröshagyma</li>
+                    <li>2 gerezd fokhagyma</li>
+                    <li>4-5 db burgonya</li>
+                    <li>2 db sárgarépa, 1 db fehérrépa</li>
+                    <li>2 db paradicsom, 1 db paprika</li>
+                    <li>pirospaprika, só, bors, kömény</li>
+                    <li>víz</li>
                 </div>
-            </div>
-            <div class="imprint-card montserrat">
-                <div class="imprint-content">
-                    <h2 class="bold">Tárhelyszolgáltató adatai:</h2>
-                    <ul>
-                        <li>Cégnév: Cloud Hosting Kft</li>
-                        <li>Cím: 1093 Budapest Gönczy Pál u. 6</li>
-                    </ul>
-                </div>
-            </div>
+            </ul>
+            <hr>
+            <ol class="steps montserrat">
+                <li>A hagymát felaprítjuk, és pirospaprikával együtt megdinszteljük.</li>
+                <li>Hozzáadjuk a kockára vágott marhahúst, majd fokhagymával és köménnyel ízesítjük.</li>
+                <li>Beletesszük a kockára vágott zöldségeket (répa, burgonya, paprika, paradicsom), felöntjük vízzel, és lassú tűzön főzzük, amíg a hús megpuhul.</li>
+                <li>Ízlés szerint sózzuk, borsozzuk, és friss kenyérrel tálaljuk. </li>
+            </ol>
         </section>
     </main>
     <footer>
         <p>A weboldalon található márkák és logók mind fikcionálisak. Minden valósággal egybeeső hasonlóság csak a
             véletlen eredménye!</p>
         <div class="links">
-            <a href="/">Főoldal</a>
+            <a href="/impresszum/">Impresszum</a>
             <a href="https://github.com/etelgarda/etelgarda.github.io" target="_blank">Forráskód</a>
         </div>
         <hr>
         <div class="legal">
-            <p>© 2024 Ételgárda</p>
+            <p>&copy; 2024 Ételgárda</p>
             <p>Minden jog fenntartva.</p>
         </div>
     </footer>
     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/receptek/scripts.js"></script>
 </body>
 
 </html>

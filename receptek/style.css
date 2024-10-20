@@ -25,16 +25,19 @@ body {
 .bold {
     font-weight: bold;
 }
+.navbar {
+  height: 5dvh;
+}
 
-.nav {
-    z-index: 0;
+.navbar a {
+  font-size: 110%;
 }
 
 .hero {
     position: relative; /* Make the container a positioning context */
     display: flex;
     background: url(/img/randomhatter.jpg) no-repeat center center/cover;
-    height: 94.5vh;
+    height: 95vh;
     align-items: center;
     justify-content: center;
     gap: 5vw;
@@ -63,7 +66,6 @@ body {
 .hero-text {
     font-size: 3rem;
     text-align: center;
-    width: 25%;
 }
 
 .hero-text h1 {
@@ -72,6 +74,10 @@ body {
     font-family: 'Cookie', cursive;
     font-size: 1.5em;
     margin: 0;
+    text-align: center;
+    width: 50vw;
+    line-height: 2ch;
+    box-sizing: border-box;
 }
 
 .hero-text h2 {
@@ -185,29 +191,61 @@ ol {
 }
 
 footer {
-    background-color: black;
-    color: white;
-    width: 100vw;
-    text-align: center;
-    margin: 0;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1vh 1vw;
-    margin-top: 5vh;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1dvh 1vw;
+  margin-top: 5dvh;
+  display: flex;
+  flex-direction: column;
 }
 
-footer > p {
-    width: 30%;
-    word-wrap: break-word;
-    margin-bottom: 0;
-    opacity: 0.2;
+footer > * {
+  width: 30%;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+footer *:has(p) {
+  opacity: 0.2;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%
+}
+
+footer .legal p {
+  margin: 0;
+}
+
+footer hr {
+  width: 50%;
+  margin: 1dvh auto;
+}
+
+footer .links a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0;
+}
+
+footer .links a:hover {
+  color: var(--highlight);
 }
 
 @media screen and (max-width: 728px) {
-    .hero-text {
-        width: 90% !important;
+
+    .hero-text h1 {
+        max-width: 90% !important;
+        min-width: fit-content;
         text-align: center;
     }
 
