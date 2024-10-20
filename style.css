@@ -198,13 +198,46 @@ footer {
   align-items: center;
   padding: 1dvh 1vw;
   margin-top: 5dvh;
+  display: flex;
+  flex-direction: column;
 }
-footer > p {
+
+footer > * {
   width: 30%;
   word-wrap: break-word;
   margin-bottom: 0;
+}
+
+footer *:has(p) {
   opacity: 0.2;
 }
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%
+}
+
+footer .legal p {
+  margin: 0;
+}
+
+footer hr {
+  width: 50%;
+  margin: 1dvh auto;
+}
+
+footer .links a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0;
+}
+
+footer .links a:hover {
+  color: var(--highlight);
+}
+
 @media screen and (max-width: 728px) {
   .hero-text,
   footer > p {
