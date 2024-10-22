@@ -32,7 +32,7 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark montserrat sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand bold" href="#"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24"
+            <a class="navbar-brand bold" href="/"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24"
                     class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -87,6 +87,16 @@
                     </ul>
                 </div>
             </div>
+            <div class="imprint-card montserrat">
+                <div class="imprint-content">
+                    <h2 class="bold">Források:</h2>
+                    <ul>
+                        <li><a href="https://hu.pinterest.com/pin/650981321113919231/">Femina - Pinterest</a></li>
+                        <li><a href="https://sobors.hu/receptek/hagyomanyos-hortobagyi-palacsinta-recept/">SóBors</a></li>
+                        <li><a href="https://www.offbeatbudapest.com/budapest-city-guide/best-traditional-hungarian-dishes/">Offbeat Budapest</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -103,6 +113,12 @@
         </div>
     </footer>
     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        // a hero rész magassága legyen a teljes képernyő magassága mínusz a navbar magassága
+        const hero = document.querySelector('.hero');
+        const navbar = document.querySelector('.navbar');
+        hero.style.height = `calc(100vh - ${navbar.clientHeight}px)`;
+    </script>
 </body>
 
 </html>

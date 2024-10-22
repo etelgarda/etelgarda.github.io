@@ -32,7 +32,7 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark montserrat sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-white bold" href="/index.html"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
+            <a class="navbar-brand text-white bold" href="/"><img src="/img/etelgarda.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top text-white me-1">Ételgárda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -54,12 +54,12 @@
         </div>
     </nav>
     <main>
-        <section class="hero">
+        <section class="hero" style="background-image: url(/img/hortobagyi.webp);">
             <div class="hero-text">
                 <h1>Hortobágyi palacsinta</h1>
-                <h2>Finom</h2>
-                <h2>Magyar</h2>
-                <a href="#recipe" class="btn">lepesek ></a>
+                <h2>Elkészítés: 1 óra 30 perc</h2>
+                <h2>Nehézség: Közepes</h2>
+                <a href="#recipe" class="btn">lépések ></a>
             </div>
         </section>
         <!-- Recipe Sections -->
@@ -97,7 +97,12 @@
         </div>
     </footer>
     <script src="/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="/receptek/scripts.js"></script>
+    <script>
+        // a hero rész magassága legyen a teljes képernyő magassága mínusz a navbar magassága
+        const hero = document.querySelector('.hero');
+        const navbar = document.querySelector('.navbar');
+        hero.style.height = `calc(100vh - ${navbar.clientHeight}px)`;
+    </script>
 </body>
 
 </html>

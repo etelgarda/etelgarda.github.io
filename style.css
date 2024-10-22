@@ -29,14 +29,10 @@ body {
 .bold {
   font-weight: 700;
 }
-.navbar {
-  height: 5dvh;
-}
 
 .hero {
   position: relative;
-  background: url(/img/randomhatter.jpg) center center/cover no-repeat;
-  height: 95dvh;
+  background: url(/img/hero_background.webp) center center/cover no-repeat;
   align-items: center;
   justify-content: center;
   gap: 5vw;
@@ -54,30 +50,10 @@ body {
   filter: brightness(0.3);
   z-index: 0;
 }
-.hero img,
 .hero-text {
   position: relative;
-  z-index: 1;
-}
-.hero img {
-  aspect-ratio: 1/1;
-  display: block;
-  max-height: 40dvh;
-  max-width: 40dvh;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 0 0 0 1.7vw rgba(0, 0, 0, 0.65);
-  transition: 0.3s ease-in-out;
-}
-.hero img:hover {
-  border-radius: 30%;
-  scale: 1.1;
-  box-shadow: none;
-  rotate: -10deg;
-}
-.hero-text {
   font-size: 3rem;
-  text-align: end;
+  text-align: center;
   width: 25%;
 }
 .hero-text h1 {
@@ -94,7 +70,7 @@ body {
 .hero .btn,
 .recipe-card .btn,
 .recipe-card img {
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero-text .highlight:hover {
   text-shadow: 0 0 1vh var(--highlight);
@@ -107,6 +83,7 @@ body {
   font-variant: small-caps;
   font-weight: 700;
   color: #fff;
+  width: fit-content;
   font-size: 1.25rem;
 }
 .hero .btn:hover {
@@ -147,10 +124,10 @@ body {
 }
 .recipe-card > img {
   max-height: 30dvh;
+  width: 30dvh;
   border-radius: 50%;
   scale: 1.2;
   aspect-ratio: 1/1;
-  width: 30dvh;
 }
 .recipe-card > img:hover {
   box-shadow: none;
@@ -180,6 +157,7 @@ body {
   font-style: italic;
   color: #fff;
   font-size: 1.3rem;
+  width: fit-content;
   border-radius: 50px;
   padding: 0.2dvh 1vw;
 }
@@ -263,6 +241,14 @@ footer .links a:hover {
   margin: 0;
 }
 
+.imprint-card a {
+  color: white;
+}
+
+.imprint-card a:visited {
+  color: white;
+}
+
 @media screen and (max-width: 728px) {
   .hero-text,
   footer > p {
@@ -305,11 +291,7 @@ footer .links a:hover {
     filter: brightness(0.5);
   }
   .recipe-card h2 {
-    top: 15dvh !important;
-    left: 3dvw !important;
-    transform: none !important;
     position: absolute;
-    text-align: left;
     align-self: flex-start !important;
   }
   .recipe-card img:hover {
@@ -394,7 +376,7 @@ footer .links a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    text-align: left;
+    text-align: center;
     align-self: flex-start !important;
     transition: 0.3s ease-in-out;
   }
@@ -416,7 +398,7 @@ footer .links a:hover {
     opacity: 0%;
   }
   .recipe-card .btn {
-    width: 12dvh;
+    width: fit-content;
     margin-bottom: 3dvh;
     margin-right: 3dvh;
     align-self: flex-end;
